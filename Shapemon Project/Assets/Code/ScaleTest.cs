@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class ScaleTest : MonoBehaviour {
-
+    public float myCoolTimer;
+    public float restart = 0f;
     // This is the time it takes to scale up/down.
     public float duration = 1.5f;
 
@@ -11,13 +12,27 @@ public class ScaleTest : MonoBehaviour {
 
 
     // This is called every frame.  I will use it to check if space is pressed down, then trigger the scale.
+
     void Update()
     {
-
-        if (Input.GetKeyDown("space"))
+        myCoolTimer -= Time.deltaTime;
+        if (myCoolTimer < 0)
         {
             StartCoroutine(DoScaleThing());
+            myCoolTimer += restart;
         }
+    }
+        void Timer(){
+            myCoolTimer -= Time.deltaTime;
+        }
+    
+
+    void Start()
+    {
+
+        
+            StartCoroutine(DoScaleThing());
+        
     }
 
     public IEnumerator DoScaleThing()
@@ -54,6 +69,7 @@ public class ScaleTest : MonoBehaviour {
             float amount = (Time.time - startTime) / duration;
             transform.localScale = Vector3.Lerp(Vector3.one * 1.5f, Vector3.one, amount);
             yield return null;
+            //StartCoroutine(DoScaleThing());
         }
 
         // Snap the scale to 1.0.
