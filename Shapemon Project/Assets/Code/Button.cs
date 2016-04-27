@@ -2,8 +2,9 @@
 using System.Collections;
 
 public class Button : MonoBehaviour {
+    public bool interactable { get; internal set; }
 
-	public void Play()
+    public void Play()
     {
         Application.LoadLevel("Level1");
     }
