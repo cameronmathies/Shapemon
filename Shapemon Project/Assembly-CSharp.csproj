@@ -49,6 +49,7 @@
      <Compile Include="Assets\Code\Move.cs" />
      <Compile Include="Assets\Code\ScaleTest.cs" />
      <Compile Include="Assets\Code\Shop\Money.cs" />
+     <Compile Include="Assets\Code\Shop\playerHealth.cs" />
      <Compile Include="Assets\Store\CurrencyCodeMapper.cs" />
      <Compile Include="Assets\Store\InventoryActions.cs" />
      <Compile Include="Assets\Store\InventoryItem.cs" />

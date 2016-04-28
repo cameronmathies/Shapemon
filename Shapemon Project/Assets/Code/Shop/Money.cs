@@ -11,13 +11,19 @@ public class Money : MonoBehaviour {
     {
         Cash = 0;
     }
-    void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision other)
     {
-        Debug.Log("Test");
-        if (other.tag == "Item Level1")
+        
+        if (other.gameObject.tag == "Item_Level1")
         {
+            Debug.Log("1");
             Cash += 10;
        }
+        if (other.gameObject.tag == "Item_Level2")
+        {
+            Debug.Log("2");
+            Cash += 20;
+        }
     }
     // Update is called once per frame
     void Update()
