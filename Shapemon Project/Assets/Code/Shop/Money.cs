@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 public class Money : MonoBehaviour {
 
-    public int Cash;
+    public static int Cash;
     public Text CashT;
   
     // Use this for initialization
@@ -23,6 +23,13 @@ public class Money : MonoBehaviour {
         {
             Debug.Log("2");
             Cash += 20;
+        }
+    }
+    public void HealthPshin()
+    {
+       if(Cash >= 500)
+        {
+            Cash -= 20;
         }
     }
     // Update is called once per frame

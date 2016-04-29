@@ -172,7 +172,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af142c480cbc21046adbf4f607c0f6b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cash: 0
   CashT: {fileID: 1186578960}
 --- !u!1 &205024701
 GameObject:
@@ -191,7 +190,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &205024702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -436,7 +435,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 428572618}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1931598925}
+        m_MethodName: HealthPshin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &428572618
@@ -1701,7 +1711,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af142c480cbc21046adbf4f607c0f6b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cash: 0
   CashT: {fileID: 1186578960}
 --- !u!114 &1931598926
 MonoBehaviour:
@@ -1745,7 +1754,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af142c480cbc21046adbf4f607c0f6b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cash: 0
   CashT: {fileID: 1186578960}
 --- !u!23 &1937358936
 MeshRenderer:
