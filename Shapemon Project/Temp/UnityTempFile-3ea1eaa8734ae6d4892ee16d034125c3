@@ -79,6 +79,7 @@
 Assets/Code/Button.cs
 Assets/Code/Move.cs
 Assets/Code/ScaleTest.cs
+Assets/Code/Shop/Buy.cs
 Assets/Code/Shop/Money.cs
 Assets/Code/Shop/playerHealth.cs
 Assets/Store/CurrencyCodeMapper.cs
