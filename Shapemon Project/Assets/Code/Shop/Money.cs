@@ -5,7 +5,9 @@ public class Money : MonoBehaviour {
 
     public static int Cash;
     public Text CashT;
-  
+    public static int HealthPoshin;
+    public Text HealthPoshinText;
+
     // Use this for initialization
     void Start()
     {
@@ -29,13 +31,14 @@ public class Money : MonoBehaviour {
     {
        if(Cash >= 500)
         {
-            Cash -= 20;
+            Cash -= 500;
+            HealthPoshin += 1;
         }
     }
     // Update is called once per frame
     void Update()
     {
-
+        HealthPoshinText.text = "" + HealthPoshin; 
         CashT.text = "GeoCash  " + Cash;
 
         if (Cash > 1000000)
