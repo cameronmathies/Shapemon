@@ -28,6 +28,7 @@ public class Money : MonoBehaviour {
     void Start()
     {
         Cash = 0;
+        Bone = 0;
     }
     void OnCollisionEnter(Collision other)
     {
@@ -77,7 +78,7 @@ public class Money : MonoBehaviour {
     }
     public void MasterPokecube()
     {
-        if (Cash >= 1200)
+        if (Bone >= 1200)
         {
             Bone -= 1200;
             MasterPokecubeNum += 1;
@@ -88,6 +89,7 @@ public class Money : MonoBehaviour {
     {
         HealthPoshinText.text = "" + HealthPoshin; 
         CashT.text = "GeoCash  " + Cash;
+        BoneText.text = "Bone  " + Bone;
 
         if (Cash > 1000000)
         {

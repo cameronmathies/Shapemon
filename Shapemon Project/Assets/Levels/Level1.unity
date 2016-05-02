@@ -172,8 +172,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af142c480cbc21046adbf4f607c0f6b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cash: 0
   CashT: {fileID: 1186578960}
+  Bone: 0
+  BoneText: {fileID: 0}
   HealthPoshinText: {fileID: 0}
+  RedPokecubeText: {fileID: 0}
+  BluePokecubeText: {fileID: 0}
+  YellowPokecubeText: {fileID: 0}
+  MasterPokecubeText: {fileID: 0}
 --- !u!1 &129489894
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,7 +403,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1931598925}
-        m_MethodName: HealthPshin
+        m_MethodName: BluePokecube
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1084,7 +1091,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1931598925}
-        m_MethodName: HealthPshin
+        m_MethodName: YellowPokecube
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1473,7 +1480,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1931598925}
-        m_MethodName: HealthPshin
+        m_MethodName: MasterPokecube
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1809,7 +1816,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1931598925}
-        m_MethodName: HealthPshin
+        m_MethodName: RedPokecube
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2029,7 +2036,7 @@ GameObject:
   - 222: {fileID: 1186578961}
   - 114: {fileID: 1186578960}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Money Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3192,8 +3199,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af142c480cbc21046adbf4f607c0f6b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cash: 0
   CashT: {fileID: 1186578960}
+  Bone: 0
+  BoneText: {fileID: 1996625019}
   HealthPoshinText: {fileID: 1816413120}
+  RedPokecubeText: {fileID: 0}
+  BluePokecubeText: {fileID: 0}
+  YellowPokecubeText: {fileID: 0}
+  MasterPokecubeText: {fileID: 0}
 --- !u!114 &1931598926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3236,8 +3250,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af142c480cbc21046adbf4f607c0f6b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cash: 0
   CashT: {fileID: 1186578960}
+  Bone: 0
+  BoneText: {fileID: 0}
   HealthPoshinText: {fileID: 0}
+  RedPokecubeText: {fileID: 0}
+  BluePokecubeText: {fileID: 0}
+  YellowPokecubeText: {fileID: 0}
+  MasterPokecubeText: {fileID: 0}
 --- !u!23 &1937358936
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3379,7 +3400,7 @@ GameObject:
   - 222: {fileID: 1996625020}
   - 114: {fileID: 1996625019}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: Bone Text (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3434,7 +3455,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Bones
+  m_Text: Bone
 --- !u!222 &1996625020
 CanvasRenderer:
   m_ObjectHideFlags: 0
