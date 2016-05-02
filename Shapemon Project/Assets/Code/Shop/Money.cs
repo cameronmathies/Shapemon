@@ -3,10 +3,26 @@ using System.Collections;
 using UnityEngine.UI;
 public class Money : MonoBehaviour {
 
-    public static int Cash;
+    public int Cash;
     public Text CashT;
+
+    public int Bone;
+    public Text BoneText;
+
     public static int HealthPoshin;
     public Text HealthPoshinText;
+
+    public static int RedPokecubeNum;
+    public Text RedPokecubeText;
+
+    public static int BluePokecubeNum;
+    public Text BluePokecubeText;
+
+    public static int YellowPokecubeNum;
+    public Text YellowPokecubeText;
+
+    public static int MasterPokecubeNum;
+    public Text MasterPokecubeText;
 
     // Use this for initialization
     void Start()
@@ -40,7 +56,7 @@ public class Money : MonoBehaviour {
         if (Cash >= 200)
         {
             Cash -= 200;
-            RedPokecube += 1;
+            RedPokecubeNum += 1;
         }
     }
     public void BluePokecube()
@@ -48,7 +64,7 @@ public class Money : MonoBehaviour {
         if (Cash >= 600)
         {
             Cash -= 600;
-            BluePokecube += 1;
+            BluePokecubeNum += 1;
         }
     }
     public void YellowPokecube()
@@ -56,15 +72,15 @@ public class Money : MonoBehaviour {
         if (Cash >= 1200)
         {
             Cash -= 1200;
-            YellowPokecube += 1;
+            YellowPokecubeNum += 1;
         }
     }
     public void MasterPokecube()
     {
         if (Cash >= 1200)
         {
-            Bones -= 1200;
-            MasterPokecube += 1;
+            Bone -= 1200;
+            MasterPokecubeNum += 1;
         }
     }
     // Update is called once per frame
