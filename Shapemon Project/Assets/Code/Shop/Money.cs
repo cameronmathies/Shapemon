@@ -78,22 +78,23 @@ public class Money : MonoBehaviour {
     }
     public void MasterPokecube()
     {
-        if (Bone >= 1200)
+        if (Bone >= 10)
         {
-            Bone -= 1200;
+            Bone -= 10;
             MasterPokecubeNum += 1;
         }
     }
     // Update is called once per frame
     void Update()
     {
-        HealthPoshinText.text = "" + HealthPoshin; 
+        HealthPoshinText.text = "" + HealthPoshin;
+        RedPokecubeText.text = "" + RedPokecubeNum;
+        BluePokecubeText.text = "" + BluePokecubeNum;
+        YellowPokecubeText.text = "" + YellowPokecubeNum;
+        MasterPokecubeText.text = "" + MasterPokecubeNum;
         CashT.text = "GeoCash  " + Cash;
         BoneText.text = "Bone  " + Bone;
 
-        if (Cash > 1000000)
-        {
-            Cash -= 1000000;
-        }
+        
     }
 }

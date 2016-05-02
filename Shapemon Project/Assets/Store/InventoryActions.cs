@@ -227,9 +227,9 @@ public class InventoryActions : MonoBehaviour {
 
 		if (items [selectedSlotIndex].isUsed) {
 			currentDispalyedItemStatus.text += " and Used";
-			//useItemButton.interactable = false;
+			useItemButton.interactable = false;
 		} else {
-			//useItemButton.interactable = true;
+			useItemButton.interactable = true;
 		}
 
 		if (items [selectedSlotIndex].isSandboxItem) {

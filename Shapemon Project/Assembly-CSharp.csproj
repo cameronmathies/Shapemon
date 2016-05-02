@@ -45,11 +45,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AutoSaverLite\Demo\DemoScripts\MultiIndexSaving.cs" />
+     <Compile Include="Assets\AutoSaverLite\Demo\DemoScripts\PlayerScript.cs" />
+     <Compile Include="Assets\AutoSaverLite\Scripts\SavedVariables.cs" />
+     <Compile Include="Assets\AutoSaverLite\Scripts\Variables.cs" />
      <Compile Include="Assets\Code\Button.cs" />
      <Compile Include="Assets\Code\Move.cs" />
      <Compile Include="Assets\Code\ScaleTest.cs" />
      <Compile Include="Assets\Code\Shop\Money.cs" />
      <Compile Include="Assets\Code\Shop\playerHealth.cs" />
+     <Compile Include="Assets\SaveData\Example\SaveDataExample.cs" />
+     <Compile Include="Assets\SaveData\SaveData.cs" />
      <Compile Include="Assets\Store\CurrencyCodeMapper.cs" />
      <Compile Include="Assets\Store\InventoryActions.cs" />
      <Compile Include="Assets\Store\InventoryItem.cs" />
@@ -60,6 +66,8 @@
      <Compile Include="Assets\Store\StoreProperties.cs" />
      <Compile Include="Assets\Store\UseItem.cs" />
      <None Include="Assets\Help.txt" />
+     <None Include="Assets\SaveData\readme.txt" />
+     <None Include="Assets\AutoSaverLite\ReadMe.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
