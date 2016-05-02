@@ -35,6 +35,38 @@ public class Money : MonoBehaviour {
             HealthPoshin += 1;
         }
     }
+    public void RedPokecube()
+    {
+        if (Cash >= 200)
+        {
+            Cash -= 200;
+            RedPokecube += 1;
+        }
+    }
+    public void BluePokecube()
+    {
+        if (Cash >= 600)
+        {
+            Cash -= 600;
+            BluePokecube += 1;
+        }
+    }
+    public void YellowPokecube()
+    {
+        if (Cash >= 1200)
+        {
+            Cash -= 1200;
+            YellowPokecube += 1;
+        }
+    }
+    public void MasterPokecube()
+    {
+        if (Cash >= 1200)
+        {
+            Bones -= 1200;
+            MasterPokecube += 1;
+        }
+    }
     // Update is called once per frame
     void Update()
     {
